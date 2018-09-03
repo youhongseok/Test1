@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
+//using UnityEngine.UI;
 [System.Serializable]
 public class Boundary
 {
@@ -16,11 +16,11 @@ public class Player : MonoBehaviour
     public Transform ShotSpawn;
     public float fireRate;
     private float nextFire;  
-    public int Score;
-    public Text ScoreText;
+    //public int Score;
+    //public Text ScoreText;
     public Bolt bolt;
-    
-   
+
+
 
 
 
@@ -28,8 +28,8 @@ public class Player : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        Score = 0;
-        SetScoreText();
+        //Score = 0;
+        //SetScoreText();
         bolt = GetComponent<Bolt>();
 
     }
@@ -65,15 +65,16 @@ public class Player : MonoBehaviour
         if (other.gameObject.CompareTag("Enemy"))
         {
           
-            other.gameObject.SetActive(false);
-            Score = Score+1;
-            SetScoreText();
+            other.gameObject.SetActive(true);
+            Destroy(gameObject);
+            //Score = Score+1;
+            //SetScoreText();
             
         }
     }
-    void SetScoreText()
-    {
-        ScoreText.text = "Score:" + Score.ToString();
-    }
+    //void SetScoreText()
+    //{
+    //    ScoreText.text = "Score:" + Score.ToString();
+    //}
 
 }

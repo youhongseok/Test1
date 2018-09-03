@@ -11,9 +11,10 @@ public class Car : MonoBehaviour {
 	}
     public void OnTriggerEnter(Collider other)
     {
-        if(other.gameObject.tag =="Enemy")
+        if(other.gameObject.tag =="Player")
         {
-            gameObject.SetActive(false);
+            gameObject.SetActive(true);
+            Destroy(gameObject);
         }
     }
 
