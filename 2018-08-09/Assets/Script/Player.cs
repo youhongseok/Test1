@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
+//using UnityEngine.UI;
 [System.Serializable]
 public class Boundary
 {
@@ -9,18 +9,24 @@ public class Boundary
 }
 public class Player : MonoBehaviour
 {
+    [SerializeField]
+    private int HP;
+    private int maxHP;
+    private int AP;
+
+    [SerializeField]
     private Rigidbody rb;
     public float speed;
     public Boundary boundary;
     public GameObject shot;
     public Transform ShotSpawn;
     public float fireRate;
-    private float nextFire;  
-    public int Score;
-    public Text ScoreText;
+    private float nextFire;
+    //public int Score;
+    //public Text ScoreText;
     public Bolt bolt;
-    
-   
+
+
 
 
 
@@ -28,17 +34,28 @@ public class Player : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        Score = 0;
-        SetScoreText();
+        //Score = 0;
+        //SetScoreText();
         bolt = GetComponent<Bolt>();
 
     }
-   
-    
-    
-   
+    public void GetPlayerData(int hp, int maxhp, int ap)
+    {
+        HP = hp;
+        maxHP = maxhp;
+        AP = ap;
 
-   
+    }
+    public void AddScore(int value)
+    {
+        //Score += value; 
+        //SetScoreText(); 
+    }
+
+
+
+
+
     private void Update()
     {
 
@@ -64,16 +81,18 @@ public class Player : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Enemy"))
         {
-          
-            other.gameObject.SetActive(false);
-            Score = Score+1;
-            SetScoreText();
-            
+
+            other.gameObject.SetActive(true);
+            Destroy(gameObject);
+
+
         }
     }
-    void SetScoreText()
-    {
-        ScoreText.text = "Score:" + Score.ToString();
-    }
+    //void SetScoreText()
+    //{
+    //    ScoreText.text = "Score:" + Score.ToString();
+    //    Score = Score + 1;
+    //}
 
 }
+
