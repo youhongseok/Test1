@@ -68,18 +68,17 @@
     <Compile Include="Assets\Script\Method.cs" />
     <Compile Include="Assets\Script\Player.cs" />
     <Compile Include="Assets\Script\SpawnerCar.cs" />
-    <Compile Include="Assets\Script\UIcontrol.cs" />
     <Reference Include="UnityEditor.StandardEvents">
-      <HintPath>C:/Users/Administrator/Downloads/Test1-master/Test1-master/2018-08-09/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+      <HintPath>C:/Users/Administrator/Documents/Test/2018-08-09/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro.Editor">
-      <HintPath>C:/Users/Administrator/Downloads/Test1-master/Test1-master/2018-08-09/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+      <HintPath>C:/Users/Administrator/Documents/Test/2018-08-09/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>C:/Users/Administrator/Downloads/Test1-master/Test1-master/2018-08-09/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>C:/Users/Administrator/Documents/Test/2018-08-09/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="Unity.TextMeshPro">
-      <HintPath>C:/Users/Administrator/Downloads/Test1-master/Test1-master/2018-08-09/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+      <HintPath>C:/Users/Administrator/Documents/Test/2018-08-09/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity/Hub/Editor/2018.2.1f1/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>
